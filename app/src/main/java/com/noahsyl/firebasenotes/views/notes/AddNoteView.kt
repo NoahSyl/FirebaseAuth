@@ -93,17 +93,18 @@ fun AddNoteView(navController: NavController, notesVM: NotesViewModel) {
                 title = { Text(text = "Nueva Nota") },
                 navigationIcon = {
                     IconButton(onClick = {
-                        navController.popBackStack()
+                        notesVM.saveNote(title, note, image) {
+                            Toast.makeText(context, "Guardado!", Toast.LENGTH_LONG).show()
+                            navController.popBackStack()
+                        }
+
                     }) {
                         Icon(imageVector = Icons.Default.ArrowBack, contentDescription = "")
                     }
                 },
                 actions = {
                     IconButton(onClick = {
-                        notesVM.saveNote(title, note, image){
-                            Toast.makeText(context, "Guardado!", Toast.LENGTH_LONG).show()
-                            navController.popBackStack()
-                        }
+                        navController.popBackStack()
                     }) {
                         Icon(imageVector = Icons.Default.AddCircle, contentDescription = "")
                     }
