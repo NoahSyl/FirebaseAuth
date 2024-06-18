@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "605706748535",
+    "project_id": "nmsnotascloud",
+    "storage_bucket": "nmsnotascloud.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605706748535:android:d9d70839666f6b3145bc72",
+        "android_client_info": {
+          "package_name": "com.noahsyl.firebasenotes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHKSVOU7x1H-VQSCY-f4kaA77WsmJZis8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
